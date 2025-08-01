@@ -1,0 +1,82 @@
+/* src/pages/Scouting.css */
+
+.scouting-container {
+  padding: 60px 20px;
+  background-color: #f4f7fa;
+}
+
+.scouting-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.scouting-header h1 {
+  font-size: 2.8rem;
+  color: #1d3557;
+}
+
+.scouting-header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.scouting-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.scouting-section.reverse {
+  flex-direction: column-reverse;
+}
+
+.scouting-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.scouting-text {
+  max-width: 600px;
+}
+
+.scouting-text h2 {
+  color: #1d3557;
+  margin-bottom: 10px;
+}
+
+.scouting-text p,
+.scouting-text ul {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.scouting-text ul {
+  padding-left: 20px;
+}
+
+.scouting-text ul li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .scouting-section,
+  .scouting-section.reverse {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .scouting-section.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .scouting-image,
+  .scouting-text {
+    flex: 1;
+  }
+}
