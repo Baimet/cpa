@@ -24,9 +24,9 @@ function Scouting() {
           <h2>Our Scouting Mission</h2>
           <p>
             We actively scout for talented youth across regions, focusing on raw
-            potential, commitment, and character. Our scouts attend school
-            games, local tournaments, and community events to identify
-            exceptional talent early on.
+            potential, commitment, and character. Our experienced scouts attend
+            school games, local tournaments, and community events to identify
+            exceptional talent.
           </p>
         </div>
       </section>
@@ -39,6 +39,7 @@ function Scouting() {
             <li>Structured training programs to refine skills</li>
             <li>Opportunities to join elite teams and showcases</li>
             <li>Academic and personal development guidance</li>
+            <li>Community Engagement and Development</li>
           </ul>
         </div>
         <div className="scouting-image">

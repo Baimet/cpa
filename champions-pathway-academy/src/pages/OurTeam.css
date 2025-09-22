@@ -18,47 +18,74 @@
 .team-header p {
   font-size: 1.1rem;
   color: #666;
+  margin-top: 10px;
+  max-width: 600px;
+  margin-inline: auto;
 }
 
 .team-grid {
   display: grid;
   gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .team-card {
   background-color: #f8f9fc;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .team-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .team-image {
   width: 100%;
-  max-width: 180px;
-  height: 180px;
+  max-width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 15px;
+  border: 3px solid #002366;
 }
 
 .team-title {
-  font-weight: bold;
+  font-weight: 600;
   color: #457b9d;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  font-size: 1.1rem;
+  margin: 10px 0;
 }
 
 .team-bio {
-  font-size: 0.95rem;
-  color: #444;
-  line-height: 1.5;
+  font-size: 0.97rem;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 10px;
 }
+
+/* Media Queries for Small Screens */
+@media (max-width: 600px) {
+  .team-header h1 {
+    font-size: 2rem;
+  }
+
+  .team-header p {
+    font-size: 1rem;
+  }
+
+  .team-card {
+    padding: 20px 15px;
+  }
+
+  .team-bio {
+    font-size: 0.9rem;
+  }
+}
+

@@ -3,12 +3,26 @@ import "./Gallery.css";
 
 function Gallery() {
   const images = [
-    "/images/gallery1.jpg",
-    "/images/gallery2.jpg",
-    "/images/gallery3.jpg",
-    "/images/gallery4.jpg",
-    "/images/gallery5.jpg",
-    "/images/gallery6.jpg",
+    "/images/journey.jpeg",
+    "/images/kwambata.jpeg",
+    "/images/scout.jpeg",
+    "/images/assess.jpeg",
+    "/images/k1.jpeg",
+    "/images/k2.jpeg",
+    "/images/k3.jpeg",
+    "/images/k4.jpeg",
+    "/images/k5.jpeg",
+    "/images/k6.jpeg",
+    "/images/k7.jpeg",
+    "/images/k8.jpeg",
+    "/images/k9.jpeg",
+    "/images/k10.jpeg",
+    "/images/k11.jpeg",
+    "/images/k12.jpeg",
+    "/images/k13.jpeg",
+    "/images/k14.jpeg",
+    "/images/k15.jpeg",
+    "/images/k16.jpeg",
   ];
 
   return (
