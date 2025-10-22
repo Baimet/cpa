@@ -10,6 +10,9 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Events from "./pages/Events";
+import PastEvents from "./pages/PastEvents";
+import EventDetails from "./pages/EventDetails";
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
         <Route path="/facilities" element={<Facilities />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/past-events" element={<PastEvents />} />
+        <Route path="/past-events/:id" element={<EventDetails />} />
       </Routes>
       <Footer />
     </Router>

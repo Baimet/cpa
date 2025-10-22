@@ -11,6 +11,27 @@
   margin-bottom: 40px;
 }
 
+.form-selector {
+  margin-bottom: 30px;
+}
+
+.form-selector button {
+  background-color: #f0f0f0;
+  color: #002366;
+  border: 1px solid #002366;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-selector button.active,
+.form-selector button:hover {
+  background-color: #002366;
+  color: #ffd700;
+}
+
 .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -74,4 +95,37 @@
   border-radius: 8px;
   text-align: center;
   margin-top: 20px;
+}
+
+/* --- Animation Effects --- */
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ok-button {
+  background-color: #002366;
+  color: #ffd700;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  margin-top: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ok-button:hover {
+  background-color: #001a4d;
 }

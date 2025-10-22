@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
@@ -32,18 +32,11 @@ function Footer() {
             <FaXTwitter />
           </a>
           <a
-            href="https://www.instagram.com/championspathwayacademy/"
+            href="https://www.instagram.com/empowerchampionstalentacademy?igsh=MXdxam4xOXV6b3ozbw%3D%3D&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaInstagram />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/champions-pathway-academy-32a28737a/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin />
           </a>
         </div>
 

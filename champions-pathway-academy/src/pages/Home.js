@@ -61,18 +61,18 @@ function Home() {
           <div className="about-text">
             <h2>About Us</h2>
             <p>
-              At Empower Champions Talent Academy we believe in every young
-              person who loves sports. We believe in their potential to advance
-              to higher levels. ECTA works to revolutionize the landscape of
-              youth development by offering a comprehensive platform for
-              athletic excellence, mentorship, basic life skills, academic
-              excellence and character building. Rooted in a commitment to
-              holistic growth, Champions Pathway Sports Academy aims to empower
-              young individuals to thrive not only on the field but also in
-              other aspects of their lives.
+              At Empower Champions Talent Academy we believe in every talented
+              person in sports and creative arts. We believe in their potential
+              to advance to higher levels. ECTA works to revolutionize the
+              landscape of youth development by offering a comprehensive
+              platform for athletic excellence, mentorship, basic life skills,
+              academic excellence and character building. Rooted in a commitment
+              to holistic growth, Empower Champions Talent Academy aims to
+              empower young individuals to thrive not only on the field but also
+              in other aspects of their lives.
               <br />
               <Link to="/about" className="more-link">
-                More on About Us →
+                More About Us →
               </Link>
             </p>
           </div>

@@ -41,6 +41,7 @@ function Navbar() {
             Home
           </Link>
         </li>
+
         <li>
           <Link
             to="/about"
@@ -49,6 +50,7 @@ function Navbar() {
             About Us
           </Link>
         </li>
+
         <li>
           <Link
             to="/scouting"
@@ -57,6 +59,7 @@ function Navbar() {
             Scouting
           </Link>
         </li>
+
         <li>
           <Link
             to="/team"
@@ -65,6 +68,41 @@ function Navbar() {
             Our Team
           </Link>
         </li>
+
+        {/* ✅ Dropdown Menu for Events */}
+        <li className="dropdown">
+          <Link
+            to="/events"
+            className={`dropdown-title ${
+              location.pathname === "/events" ||
+              location.pathname === "/past-events"
+                ? "active"
+                : ""
+            }`}
+          >
+            Events ▾
+          </Link>
+          <ul className="dropdown-menu">
+            <li>
+              <Link
+                to="/events"
+                className={location.pathname === "/events" ? "active" : ""}
+              >
+                Upcoming Events
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/past-events"
+                className={location.pathname === "/past-events" ? "active" : ""}
+              >
+                Past Events
+              </Link>
+            </li>
+          </ul>
+        </li>
+        {/* ✅ End of Dropdown */}
+
         <li>
           <Link
             to="/gallery"
@@ -73,6 +111,7 @@ function Navbar() {
             Gallery
           </Link>
         </li>
+
         <li>
           <Link
             to="/contact"

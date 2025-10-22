@@ -81,7 +81,7 @@ function About() {
             In a landmark moment, ECTA signed a Memorandum of Understanding with
             Makueni County Government, led by Governor Mutula Kilonzo Jr. The
             partnership will see the development of a world-class sports academy
-            in Wote. The facility will feature modern training infrastructure
+            in Makueni. The facility will feature modern training infrastructure
             and mentorship programs, equipping youth with leadership, life
             skills, and global sporting opportunities.
           </p>

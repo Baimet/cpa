@@ -8,7 +8,7 @@ const teamMembers = [
   {
     name: "Beth Wamalwa",
     title: "Patron",
-    image: "/images/patron.jpeg",
+    image: "/images/patty.jpeg",
     bio: "Beth Wamalwa serves as the esteemed Patron of Empower Champions Talent Academy, offering invaluable guidance and inspiration to the academy’s vision and mission. Her leadership and dedication embody the academy’s commitment to excellence.",
   },
   {
@@ -20,7 +20,7 @@ const teamMembers = [
   {
     name: "Mercy Yatich",
     title: "CEO",
-    image: "/images/team2.jpeg",
+    image: "/images/mj.jpeg",
     bio: "Mercy Yatich oversees the overall direction of the academy with a strong focus on growth, impact, and excellence. Her leadership ensures that every program aligns with the academy’s goal of nurturing disciplined, well-rounded athletes both on and off the field.",
   },
   {
@@ -31,11 +31,19 @@ const teamMembers = [
   },
 
   {
+    name: "Isaac Baimet",
+    title: "Director General & Digital Operations",
+    image: "/images/do.jpg",
+    bio: "Isaac Baimet leads the academy’s operational planning and event execution. With a focus on logistics, coordination, and athlete support systems, he ensures that every program and training session runs with precision and purpose.",
+  },
+
+  {
     name: "Irene Nyatichi",
     title: "Director Administration",
     image: "/images/team1.jpeg",
     bio: "Irene Nyatichi ensures that all administrative operations run efficiently and professionally. Her attention to detail and strong organizational skills contribute to the smooth delivery of the academy’s day-to-day activities and long-term goals.",
   },
+
   {
     name: "Ezna Sarah",
     title: "Director Finance",
@@ -44,16 +52,31 @@ const teamMembers = [
   },
 
   {
-    name: "Isaac Baimet",
-    title: "Director General & Digital Operations",
-    image: "/images/do.jpg",
-    bio: "Isaac Baimet leads the academy’s operational planning and event execution. With a focus on logistics, coordination, and athlete support systems, he ensures that every program and training session runs with precision and purpose.",
+    name: "Damaris Okok",
+    title: "Director Human Resource",
+    image: "/images/eddah.jpeg",
+    bio: "Damaris is dedicated to nurturing talent and fostering a positive team culture at CPA. She ensures our people remain motivated and aligned with the academy’s vision of empowering youth through sports.",
   },
+
   {
     name: "Daniel Ndirangu",
     title: "Director Technical",
     image: "/images/didi.jpeg",
     bio: "With vast technical expertise, Dan Ndirangu shapes the academy’s training standards and athletic development plans. He works closely with coaches and players to ensure each athlete receives the guidance and mentorship needed to excel.",
+  },
+
+  {
+    name: "Abraham Kipleting",
+    title: "Administrative Secretary",
+    image: "/images/abu.jpeg",
+    bio: "Abraham plays a key role in ensuring the academy’s day-to-day operations run seamlessly. With strong organizational skills, he provides vital administrative support that keeps programs and communications well-coordinated",
+  },
+
+  {
+    name: "Mike Mulure",
+    title: "Media Incharge & Branding",
+    image: "/images/mike.jpeg",
+    bio: "Mike Mulure leads media and branding efforts at Empower Champions Talent Academy. He manages communications, digital presence and storytelling to showcase the academy’s impact and strengthen its visibility in the community.",
   },
 ];
 
@@ -66,7 +89,7 @@ function OurTeam() {
     <div className="team-container">
       <header className="team-header" data-aos="fade-down">
         <h1>Meet Our Team</h1>
-        <p>The driving force behind Champions Pathway Sports Academy</p>
+        <p>The driving force behind Empower Champions Talent Academy</p>
       </header>
 
       <div className="team-grid">
