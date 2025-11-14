@@ -1,4 +1,5 @@
 // src/components/Events.js
+/*
 import React from "react";
 import "./Events.css";
 
@@ -8,7 +9,7 @@ function Events() {
       title: "Launch of ECTA",
       description:
         "The official launch of the academy, marking the beginning of a new journey in nurturing talent and empowering youth through sports.",
-      date: "13th December",
+      date: "11th April 2026",
       time: "8:00 AM",
       location: "Yikitise Primary School, Kitise Location",
       image: "/images/launch.jpeg",
@@ -47,3 +48,4 @@ function Events() {
 }
 
 export default Events;
+*/

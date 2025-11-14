@@ -53,10 +53,10 @@ function Navbar() {
 
         <li>
           <Link
-            to="/scouting"
-            className={location.pathname === "/scouting" ? "active" : ""}
+            to="/blog"
+            className={location.pathname === "/blog" ? "active" : ""}
           >
-            Scouting
+            Blog
           </Link>
         </li>
 

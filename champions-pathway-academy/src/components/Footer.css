@@ -1,51 +1,130 @@
 .footer {
   background-color: #002366;
   color: white;
-  padding: 20px 0;
-  margin-top: 40px;
+  padding: 40px 0 20px;
+  margin-top: 60px;
+  position: relative;
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
-}
-
-.footer-links {
-  display: flex;
   gap: 20px;
 }
 
-.footer-links a {
+/* --- Navigation Links --- */
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  position: relative;
+}
+
+.footer-links a,
+.footer-links .dropdown-title {
   color: white;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  cursor: pointer;
+  font-size: 0.95rem;
 }
 
-.footer-links a:hover {
-  color: #ffcc00; /* Gold highlight */
+.footer-links a:hover,
+.footer-links a.active,
+.footer-links .dropdown-title.active {
+  color: #ffd700;
 }
 
+/* --- Dropdown (for Events) --- */
+.footer-dropdown {
+  position: relative;
+}
+
+.footer-dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #001a4d;
+  top: -110%;
+  left: 0;
+  list-style: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  min-width: 180px;
+}
+
+.footer-dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.footer-dropdown-menu li a:hover {
+  background-color: #002b80;
+  color: #ffd700;
+}
+
+.footer-dropdown:hover .footer-dropdown-menu {
+  display: block;
+}
+
+/* --- Social Media --- */
 .footer-social {
   display: flex;
-  gap: 15px;
+  gap: 18px;
+  margin-top: 10px;
 }
 
 .footer-social a {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer-social a:hover {
-  color: #ffcc00;
+  color: #ffd700;
   transform: scale(1.2);
 }
 
+/* --- Copyright --- */
 .footer-copy {
   font-size: 14px;
-  opacity: 0.8;
+  opacity: 0.85;
   text-align: center;
+  margin-top: 10px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .footer-dropdown-menu li a {
+    padding: 6px 0;
+  }
+
+  .footer-dropdown:hover .footer-dropdown-menu {
+    display: block;
+  }
 }

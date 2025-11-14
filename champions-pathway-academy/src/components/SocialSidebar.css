@@ -1,0 +1,63 @@
+.social-sidebar {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(0, 35, 102, 0.85);
+  padding: 10px 8px;
+  border-radius: 8px 0 0 8px;
+  z-index: 2000;
+  box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.25);
+  animation: fadeInSidebar 1.2s ease forwards;
+}
+
+/* --- Icon Styling --- */
+.social-sidebar a {
+  color: white;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-sidebar a:hover {
+  color: #ffd700;
+  transform: scale(1.2);
+}
+
+/* --- Optional: Unique Colors --- */
+.social-sidebar a.facebook:hover {
+  color: #1877f2;
+}
+
+.social-sidebar a.twitter:hover {
+  color: gray;
+}
+
+.social-sidebar a.instagram:hover {
+  color: #e1306c;
+}
+
+/* --- Fade-in Animation --- */
+@keyframes fadeInSidebar {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+/* --- Responsive Hide on Mobile --- */
+@media (max-width: 768px) {
+  .social-sidebar {
+    display: none;
+  }
+}
