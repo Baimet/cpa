@@ -156,14 +156,14 @@ function Gallery() {
       <section
         className="gallery-hero"
         style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL}/images/DSC_6429.jpg)`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/k16.jpeg)`,
         }}
       >
         <div className="gallery-hero-overlay">
           <h1>Our Journey in Pictures</h1>
           <p>
             A visual story of our efforts to empower, inspire, and transform
-            lives through sports, mentorship, and environmental stewardship.
+            lives through sports, mentorship and environmental stewardship.
           </p>
         </div>
       </section>

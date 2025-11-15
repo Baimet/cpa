@@ -148,7 +148,7 @@ function About() {
             Join us as we raise a generation of champions—on and off the field.
           </p>
           <Link to="/contact" className="cta-button-link">
-            <button className="cta-button">Get Involved</button>
+            <button className="cta-btn">Get Involved</button>
           </Link>
         </section>
       </div>

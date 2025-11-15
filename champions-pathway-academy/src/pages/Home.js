@@ -49,7 +49,7 @@ function Home() {
       "@context": "https://schema.org",
       "@type": "SportsOrganization",
       "name": "Empower Champions Talent Academy",
-      "url": "https://www.empowerchampions.org",
+      "url": "https://www.empowertalentacademy.org",
       "logo": "${process.env.PUBLIC_URL}/images/ecta.jpeg",
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61579454606277",
@@ -87,12 +87,14 @@ function Home() {
           </Swiper>
 
           <div className="hero-overlay">
-            <h1>Welcome to Empower Champions Talent Academy</h1>
+            <h1>
+              <span>Welcome to Empower Champions Talent Academy</span>
+            </h1>
             <p>
               <i>"Where Excellence Thrives and Legends Rise"</i>
             </p>
-            <Link to="/contact" className="cta-button">
-              Get Started
+            <Link to="/contact" className="cta-btn">
+              <span>Get Started</span>
             </Link>
           </div>
         </section>
@@ -212,7 +214,7 @@ function Home() {
         <section className="cta-section" data-aos="fade-up">
           <h2>Join the Empower Champions Talent Academy Today</h2>
           <Link to="/contact" className="cta-button-link">
-            <button className="cta-button">Contact Us</button>
+            <button className="cta-btn">Contact Us</button>
           </Link>
         </section>
       </div>
