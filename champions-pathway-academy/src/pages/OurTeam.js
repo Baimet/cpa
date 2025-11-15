@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./OurTeam.css";
+import { Helmet } from "react-helmet-async";
 
 const teamMembers = [
   {
@@ -86,23 +87,73 @@ function OurTeam() {
   }, []);
 
   return (
-    <div className="team-container">
-      <header className="team-header" data-aos="fade-down">
-        <h1>Meet Our Team</h1>
-        <p>The driving force behind Empower Champions Talent Academy</p>
-      </header>
+    <>
+      <Helmet>
+        <title>Empower Champions Talent Academy | Home</title>
+        <meta
+          name="description"
+          content="Empower Champions Talent Academy is dedicated to nurturing young athletes in Makueni County through sports, education, and personal growth."
+        />
+        <meta
+          name="keywords"
+          content="Empower Champions Talent Academy, sports academy Kenya, youth empowerment, talent development, Makueni, football training, athletics"
+        />
+        <meta name="author" content="Empower Champions Talent Academy" />
+        <meta property="og:title" content="Empower Champions Talent Academy" />
+        <meta
+          property="og:description"
+          content="Empowering the next generation of champions through sports and mentorship."
+        />
+        <meta
+          property="og:image"
+          content={`${process.env.PUBLIC_URL}/images/ecta.jpeg`}
+        />
+        <meta
+          property="og:url"
+          content="https://www.empowertalentacademy.org"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
 
-      <div className="team-grid">
-        {teamMembers.map((member, index) => (
-          <div className="team-card" key={index} data-aos="fade-up">
-            <img src={member.image} alt={member.name} className="team-image" />
-            <h3>{member.name}</h3>
-            <p className="team-title">{member.title}</p>
-            <p className="team-bio">{member.bio}</p>
-          </div>
-        ))}
+        <script type="application/ld+json">
+          {`
+        {
+          "@context": "https://schema.org",
+          "@type": "SportsOrganization",
+          "name": "Empower Champions Talent Academy",
+          "url": "https://www.empowertalentacademy.org",
+          "logo": "${process.env.PUBLIC_URL}/images/ecta.jpeg",
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61579454606277",
+            "https://x.com/cpacademy24",
+            "https://www.instagram.com/empowerchampionstalentacademy"
+          ],
+          "description": "Empower Champions Talent Academy develops holistic young athletes through sports, mentorship, and environmental action in Kenya."
+        }
+      `}
+        </script>
+      </Helmet>
+      <div className="team-container">
+        <header className="team-header" data-aos="fade-down">
+          <h1>Meet Our Team</h1>
+          <p>The driving force behind Empower Champions Talent Academy</p>
+        </header>
+
+        <div className="team-grid">
+          {teamMembers.map((member, index) => (
+            <div className="team-card" key={index} data-aos="fade-up">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="team-image"
+              />
+              <h3>{member.name}</h3>
+              <p className="team-title">{member.title}</p>
+              <p className="team-bio">{member.bio}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

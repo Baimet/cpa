@@ -9,27 +9,79 @@ function Gallery() {
 
   const galleryItems = [
     {
-      src: "/images/DSC_6246.jpg",
-      title: "Tree Planting at Kitise",
-      desc: "Youth and community working together to make Makueni greener.",
+      src: "/images/assess.jpeg",
+      title: "Sharing our Vision",
+      desc: "Early engagement with the school around our proposed vision ",
     },
     {
-      src: "/images/DSC_6298.jpg",
-      title: "Mentorship in Action",
-      desc: "Coaches guiding students on discipline and teamwork.",
+      src: "/images/kwambata.jpeg",
+      title: "Resource Distribution",
+      desc: "Distributing sports equipment to Kwambata School ",
     },
     {
-      src: "/images/DSC_6321.jpg",
+      src: "/images/mutua.jpeg",
+      title: "County Government Engagement",
+      desc: "Signing MOU with County Government ",
+    },
+    {
+      src: "/images/measure1.jpeg",
+      title: "Field Assessment",
+      desc: "Inspection and Measurements of the fields ",
+    },
+    {
+      src: "/images/measure4.jpeg",
       title: "Our Volunteers",
       desc: "Empowering local volunteers to lead change.",
     },
     {
-      src: "/images/DSC_6324.jpg",
-      title: "Nurturing Growth",
-      desc: "Students planting seedlings under the academy’s sustainability drive.",
+      src: "/images/k9.jpeg",
+      title: "Progress Update Trip",
+      desc: "Planned engagements on project progress updates",
+    },
+
+    {
+      src: "/images/k14.jpeg",
+      title: "Physio and Nutrition",
+      desc: "At KMTC Mbuvo for physio and nutrition awareness for the community",
     },
     {
-      src: "/images/DSC_6390.jpg",
+      src: "/images/k3.jpeg",
+      title: "Grounds Inspection",
+      desc: "Assessing developments on the fields",
+    },
+    {
+      src: "/images/DSC_5576.jpg",
+      title: "Tree Planting Event",
+      desc: "ECTA Patron addressing the gathering",
+    },
+    {
+      src: "/images/DSC_5544.jpg",
+      title: "Tree Planting Event",
+      desc: "ECTA Co-Patron addressing the gathering",
+    },
+    {
+      src: "/images/DSC_5903.jpg",
+      title: "Tree Planting Event",
+      desc: "ECTA CEO following proceedings",
+    },
+    {
+      src: "/images/DSC_6548.jpg",
+      title: "A Greener Vision",
+      desc: "Dep. CEO steering the journey towards sustainability.",
+    },
+    {
+      src: "/images/DSC_6246.jpg",
+      title: "Mentorship in Action",
+      desc: "Coaches guiding students in a game of chess",
+    },
+
+    {
+      src: "/images/DSC_6324.jpg",
+      title: "Nurturing Growth",
+      desc: "Students lining up for a showcase football match",
+    },
+    {
+      src: "/images/DSC_5855.jpg",
       title: "Community Outreach",
       desc: "Bringing unity through environmental awareness.",
     },
@@ -39,19 +91,19 @@ function Gallery() {
       desc: "Working hand in hand for a better tomorrow.",
     },
     {
-      src: "/images/DSC_6459.jpg",
+      src: "/images/DSC_6794.jpg",
       title: "Celebrating Efforts",
       desc: "Joy and excitement after a successful day.",
     },
     {
       src: "/images/DSC_6491.jpg",
       title: "Hope in Action",
-      desc: "Inspiring change through meaningful activities.",
+      desc: "Inspiring change through the tree planting initiative.",
     },
     {
-      src: "/images/DSC_6548.jpg",
-      title: "A Greener Vision",
-      desc: "Our journey towards sustainability continues.",
+      src: "/images/DSC_6634.jpg",
+      title: "Talent Showcase",
+      desc: "Young talents exhibiting their acrobatic skills",
     },
   ];
 
