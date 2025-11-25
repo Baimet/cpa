@@ -87,8 +87,8 @@ body {
 
 
 .cta-btn{
-  background-color: #002366; /* Blue */
-  color: white;
+  background-color: #002366;
+  color: #ffd700;
   padding: 15px 35px;
   font-size: 1.2rem;
   font-weight: bold;
@@ -101,8 +101,8 @@ body {
 }
 
 .cta-btn:hover {
-  background-color: #ffd700; /* Gold hover */
-  color: #002366; /* Blue text */
+  background-color: #002366;
+  color: #ffd700;
   transform: scale(1.05);
 }
 

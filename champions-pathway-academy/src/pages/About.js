@@ -94,7 +94,7 @@ function About() {
 
               <p>
                 ECTA envisions becoming a leading youth development academy not
-                only in Kenya but across Africa. Our goal is to establish
+                only in Kenya but across the globe. Our goal is to establish
                 holistic programs that foster athletic excellence, academic
                 achievement, and character-building. We are committed to
                 grooming future leaders, professionals, and global citizens.
@@ -106,7 +106,10 @@ function About() {
         <section className="about-values" data-aos="fade-up">
           <h2>Our Core Beliefs</h2>
           <ul>
-            <li>Empowering youth through structured sports programs</li>
+            <li>
+              Empowering youth through structured sports programs and creative
+              sports
+            </li>
             <li>
               Promoting gender equality and inclusion in all our activities
             </li>

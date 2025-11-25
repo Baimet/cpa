@@ -30,7 +30,7 @@ function BlogDetails() {
       hero: "/images/DSC_6429.jpg",
       content: [
         `As part of our sustainability mission, students, teachers, parents, and local leaders united to plant trees that will nourish our environment for decades.`,
-        `Over 200 seedlings were planted, contributing to a greener and more climate-resilient community.`,
+        `Over 30 seedlings were planted, contributing to a greener and more climate-resilient community.`,
         `Environmental conservation is a core component of building holistic champions — those who value and protect their communities.`,
       ],
     },
@@ -41,13 +41,13 @@ function BlogDetails() {
       author: "Empower Champions Team",
       hero: "/images/measure1.jpeg",
       content: [
-        `To ensure our upcoming sports programs run on professionally prepared facilities, our academy visited Kwambata Primary School for an official field assessment.`,
+        `April 11th, 2026 will mark a major milestone for the youth of the entire Makueni County as Empower Champions Talent Academy officially launches its operations. The academy will welcome young athletes eager to elevate their skills while growing in character and leadership.`,
 
-        `Our technical team carefully measured the playing grounds, taking into account size, surface quality, and environmental factors. A layout plan was created to guide the grading and leveling processes that will soon begin.`,
+        `The launch event is expected to bring together students, parents, coaches, educational partners and community leaders — all united by one powerful mission: empowering talent and shaping future champions.`,
 
-        `We also engaged the school administration to align on timelines, sustainability practices, and shared usage of the improved grounds. These facilities will not only support our programs, but also benefit students and the wider Kitise community.`,
+        `This official launch represents the beginning of a long-term investment in holistic development — combining sports, mentorship, education, and life skills to transform young people's futures.`,
 
-        `The field upgrade initiative reflects our mission — providing young athletes with proper sporting infrastructure to nurture their talents while uplifting the community.`,
+        `From football and athletics to basketball, volleyball, chess and more — the academy will serve as a hub of opportunity, bringing access to professional coaching and structured talent pathways previously unavailable to many youths.`,
       ],
     },
   };

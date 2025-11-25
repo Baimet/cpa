@@ -134,3 +134,82 @@
     height: 220px;
   }
 }
+
+/* =======================
+   🎥 Bulletin Section (Blue Theme)
+======================= */
+.bulletin-section {
+  background: #002366; /* Blue theme */
+  padding: 70px 40px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto 100px auto;
+  text-align: center;
+  animation: fadeInUp 1.2s ease;
+  border-radius: 18px;
+}
+
+.bulletin-section h2 {
+  font-size: 2.4rem;
+  color: #FFD700; /* Gold */
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.bulletin-subtitle {
+  color: #e0e6f5;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+/* 📺 Card Layout */
+.bulletin-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* When one card → nicely centered */
+.bulletin-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 15px;
+  width: 100%;
+  max-width: 650px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.bulletin-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+}
+
+/* 🎬 Video Style */
+.bulletin-video {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #000;
+}
+
+/* Caption text below video */
+.bulletin-caption {
+  margin-top: 12px;
+  font-size: 1.05rem;
+  color: #002366;
+  font-weight: 600;
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .bulletin-section {
+    padding: 50px 20px;
+  }
+
+  .bulletin-video {
+    height: 240px;
+  }
+}

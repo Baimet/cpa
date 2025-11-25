@@ -12,7 +12,7 @@ function UpcomingEvents() {
       title: "Launch of Empower Champions Talent Academy",
       date: "13th December 2025",
       time: "8:00 AM",
-      location: "Kitise Primary School Grounds, Makueni",
+      location: "Yikitise Primary School Grounds, Makueni",
       image: "/images/scout.jpeg",
       description:
         "Join us as we officially unveil Empower Champions Talent Academy — a center for nurturing talent and developing future champions. Expect games, mentorship sessions and community fun!",

@@ -70,12 +70,6 @@ function Gallery() {
       desc: "Dep. CEO steering the journey towards sustainability.",
     },
     {
-      src: "/images/DSC_6246.jpg",
-      title: "Mentorship in Action",
-      desc: "Coaches guiding students in a game of chess",
-    },
-
-    {
       src: "/images/DSC_6324.jpg",
       title: "Nurturing Growth",
       desc: "Students lining up for a showcase football match",
@@ -101,9 +95,39 @@ function Gallery() {
       desc: "Inspiring change through the tree planting initiative.",
     },
     {
+      src: "/images/DSC_6158.jpg",
+      title: "Interviews",
+      desc: "A student engages in a conversation with the media ",
+    },
+    {
+      src: "/images/DSC_6246.jpg",
+      title: "Mentorship in Action",
+      desc: "Coaches guiding students in a game of chess",
+    },
+    {
       src: "/images/DSC_6634.jpg",
       title: "Talent Showcase",
-      desc: "Young talents exhibiting their acrobatic skills",
+      desc: "An ongoing Acrobatic Session",
+    },
+    {
+      src: "/images/DSC_6638.jpg",
+      title: "Acrobatic Session",
+      desc: "Two young talents exhibiting their acrobatic skills",
+    },
+    {
+      src: "/images/DSC_6403.jpg",
+      title: "Volleyball",
+      desc: "An ongoing volleyball match",
+    },
+    {
+      src: "/images/DSC_6306.jpg",
+      title: "Football",
+      desc: "An ongoing football match",
+    },
+    {
+      src: "/images/DSC_6756.jpg",
+      title: "Awards Session",
+      desc: "A team is awarded for its participation in an event",
     },
   ];
 
@@ -156,7 +180,7 @@ function Gallery() {
       <section
         className="gallery-hero"
         style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL}/images/k16.jpeg)`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/k8.jpeg)`,
         }}
       >
         <div className="gallery-hero-overlay">
@@ -183,6 +207,28 @@ function Gallery() {
           </div>
         </section>
       </div>
+
+      <section className="bulletin-section">
+        <h2>Academy Bulletin</h2>
+        <p className="bulletin-subtitle">
+          Watch our latest updates, news highlights, and community stories.
+        </p>
+
+        <div className="bulletin-grid">
+          <div className="bulletin-card">
+            <video
+              className="bulletin-video"
+              controls
+              poster="/images/DSC_5521.jpg"
+            >
+              <source src="/videos/bulletin1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <p className="bulletin-caption">Tree Planting Day Highlights</p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
