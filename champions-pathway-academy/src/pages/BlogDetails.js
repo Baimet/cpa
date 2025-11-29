@@ -17,9 +17,13 @@ function BlogDetails() {
       author: "Admin",
       hero: "/images/scout.jpeg",
       content: [
-        `December 13, 2025 marked a new milestone for the youth in Kitise and the entire Makueni County. Empower Champions Talent Academy officially opened its doors, welcoming young athletes dedicated to growing in both sports and character.`,
-        `The launch event featured mentorship talks, games, cultural performances, and special guests from education and sports development sectors.`,
-        `This day symbolizes a long-term investment in young champions who will shape Kenya's future through sports, education, and community impact.`,
+        `April 11th, 2026 will mark a major milestone for the youth of Kitise and the entire Makueni County as Empower Champions Talent Academy officially launches its operations. The academy will welcome young athletes eager to elevate their skills while growing in character and leadership.`,
+
+        `The launch event is expected to bring together students, parents, coaches, educational partners, and community leaders — all united by one powerful mission: empowering talent and shaping future champions.`,
+
+        `This official launch represents the beginning of a long-term investment in holistic development — combining sports, mentorship, education, and life skills to transform young people's futures.`,
+
+        `From football and athletics to chess, scrabble, swimming and more — the academy will serve as a hub of opportunity, bringing access to professional coaching and structured talent pathways previously unavailable to many youths.`,
       ],
     },
 
@@ -41,13 +45,13 @@ function BlogDetails() {
       author: "Empower Champions Team",
       hero: "/images/measure1.jpeg",
       content: [
-        `April 11th, 2026 will mark a major milestone for the youth of the entire Makueni County as Empower Champions Talent Academy officially launches its operations. The academy will welcome young athletes eager to elevate their skills while growing in character and leadership.`,
+        `To ensure our upcoming sports programs run on professionally prepared facilities, our academy visited Kwambata Primary School for an official field assessment.`,
 
-        `The launch event is expected to bring together students, parents, coaches, educational partners and community leaders — all united by one powerful mission: empowering talent and shaping future champions.`,
+        `Our technical team carefully measured the playing grounds, taking into account size, surface quality, and environmental factors. A layout plan was created to guide the grading and leveling processes that will soon begin.`,
 
-        `This official launch represents the beginning of a long-term investment in holistic development — combining sports, mentorship, education, and life skills to transform young people's futures.`,
+        `We also engaged the school administration to align on timelines, sustainability practices, and shared usage of the improved grounds. These facilities will not only support our programs, but also benefit students and the wider Kitise community.`,
 
-        `From football and athletics to basketball, volleyball, chess and more — the academy will serve as a hub of opportunity, bringing access to professional coaching and structured talent pathways previously unavailable to many youths.`,
+        `The field upgrade initiative reflects our mission — providing young athletes with proper sporting infrastructure to nurture their talents while uplifting the community.`,
       ],
     },
   };
