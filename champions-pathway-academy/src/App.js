@@ -14,6 +14,7 @@ import Blog from "./pages/Blog";
 import SocialSidebar from "./components/SocialSidebar";
 import { HelmetProvider } from "react-helmet-async";
 import BlogDetails from "./pages/BlogDetails";
+import Donate from "./pages/Donate";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/past-events" element={<PastEvents />} />
           <Route path="/events/:id" element={<EventDetails />} />
           <Route path="/blog/:id" element={<BlogDetails />} />
+          <Route path="/donate" element={<Donate />} />
         </Routes>
         <Footer />
       </Router>

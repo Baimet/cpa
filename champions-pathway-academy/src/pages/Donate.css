@@ -1,0 +1,487 @@
+.donate-page {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fc;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Hero */
+.donate-hero {
+  position: relative;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.donate-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.donate-hero-overlay {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 850px;
+  background: rgba(0, 35, 102, 0.78);
+  padding: 36px 28px;
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+}
+
+.donate-hero h1 {
+  font-size: 2.9rem;
+  color: #ffd700;
+  margin-bottom: 14px;
+  line-height: 1.15;
+}
+
+.donate-hero p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0;
+  color: #f4f4f4;
+}
+
+.donate-trust {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #ffd700;
+  font-weight: 500;
+}
+
+/* Intro */
+.donate-intro {
+  text-align: center;
+  padding: 70px 20px 25px;
+}
+
+.donate-intro h2 {
+  color: #002366;
+  font-size: 2.2rem;
+  margin-bottom: 14px;
+}
+
+.donate-intro p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.donate-highlight {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Cards */
+.donation-tiers-section {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 40px 20px 90px;
+}
+
+.donation-tiers-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 45px;
+}
+
+.donation-tiers-header h2 {
+  color: #002366;
+  font-size: 2.2rem;
+  margin-bottom: 14px;
+}
+
+.donation-tiers-header p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.donation-tiers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.donation-tier-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%);
+  border: 1px solid rgba(0, 35, 102, 0.08);
+  border-radius: 22px;
+  padding: 28px 24px;
+  box-shadow: 0 10px 24px rgba(0, 35, 102, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+}
+
+.donation-tier-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0, 35, 102, 0.14);
+}
+
+.tier-top {
+  margin-bottom: 18px;
+}
+
+.tier-badge {
+  display: inline-block;
+  background-color: #002366;
+  color: #ffd700;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.tier-top h3 {
+  color: #002366;
+  font-size: 1.5rem;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.tier-pricing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.price-chip {
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.price-chip.kes {
+  background-color: #e8efff;
+  color: #002366;
+}
+
+.price-chip.usd {
+  background-color: #fff5cc;
+  color: #7a5a00;
+}
+
+.tier-frequency {
+  color: #777;
+  font-style: italic;
+  margin-bottom: 18px;
+  font-size: 0.98rem;
+}
+
+.tier-description-box {
+  background: rgba(0, 35, 102, 0.04);
+  border-radius: 14px;
+  padding: 18px 16px;
+  margin-bottom: 22px;
+  flex-grow: 1;
+}
+
+.tier-description-box p {
+  color: #444;
+  line-height: 1.75;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.donate-btn {
+  background-color: #002366;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 22px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.donate-btn-link {
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+/* Custom donation section */
+.custom-donation-section {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px 90px;
+}
+
+.custom-donation-card {
+  background: linear-gradient(135deg, #002366 0%, #0b3d91 100%);
+  color: white;
+  border-radius: 24px;
+  padding: 40px 28px;
+  text-align: center;
+  box-shadow: 0 14px 30px rgba(0, 35, 102, 0.2);
+}
+
+.custom-badge {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #002366;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.custom-donation-card h2 {
+  font-size: 2.1rem;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+.custom-donation-text {
+  max-width: 760px;
+  margin: 0 auto 22px;
+  line-height: 1.8;
+  color: #eef3ff;
+  font-size: 1.05rem;
+}
+
+.custom-pricing {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.custom-price-chip {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffd700;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.custom-frequency {
+  color: #dbe5ff;
+  font-style: italic;
+  margin-bottom: 24px;
+  font-size: 1rem;
+}
+
+.custom-donation-card .donate-btn-link {
+  display: inline-block;
+  align-self: center;
+}
+
+.custom-donation-card .donate-btn {
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .custom-donation-card {
+    padding: 32px 20px;
+  }
+
+  .custom-donation-card h2 {
+    font-size: 1.7rem;
+  }
+
+  .custom-donation-text {
+    font-size: 1rem;
+  }
+}
+
+.donate-btn:disabled {
+  background-color: #9aa8c7;
+  color: white;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.donate-btn:hover {
+  background-color: #ffd700;
+  color: #002366;
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .donation-tiers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .donation-tiers-header h2 {
+    font-size: 1.9rem;
+  }
+
+  .tier-top h3 {
+    font-size: 1.3rem;
+  }
+}
+
+.secure-payments-note {
+  text-align: center;
+  padding: 0 20px 50px;
+}
+
+.secure-payments-note p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Bottom note */
+.donate-note {
+  background: #002366;
+  color: white;
+  text-align: center;
+  padding: 75px 20px;
+}
+
+.donate-note h2 {
+  color: #ffd700;
+  font-size: 2rem;
+  margin-bottom: 14px;
+}
+
+.donate-note p {
+  max-width: 780px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .donate-hero {
+    height: 60vh;
+  }
+
+  .donate-hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .donate-hero-overlay {
+    padding: 28px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .donate-hero {
+    height: 55vh;
+  }
+
+  .donate-hero h1 {
+    font-size: 2rem;
+  }
+
+  .donate-hero p {
+    font-size: 1rem;
+  }
+
+  .donate-intro {
+    padding: 55px 20px 20px;
+  }
+
+  .donate-intro h2 {
+    font-size: 1.8rem;
+  }
+
+/* =========================
+   M-PESA MODAL
+========================= */
+
+.mpesa-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.mpesa-box {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+.mpesa-box h2 {
+  color: #002366;
+  margin-bottom: 10px;
+}
+
+.mpesa-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.mpesa-details {
+  background: #f4f6fb;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.mpesa-details p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.mpesa-steps {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.mpesa-steps h4 {
+  color: #002366;
+  margin-bottom: 8px;
+}
+
+.mpesa-steps ol {
+  padding-left: 18px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.mpesa-close {
+  background-color: #002366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mpesa-close:hover {
+  background-color: #ffd700;
+  color: #002366;
+} 
+}

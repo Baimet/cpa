@@ -102,7 +102,7 @@ function Contact() {
           <div className="contact-info">
             <h2>Get in Touch</h2>
             <p>
-              <strong>Email:</strong> info.empowertalentacademy@gmail.com
+              <strong>Email:</strong> info@empowertalentacademy.org
             </p>
             <p>
               <strong>Phone:</strong> +254 798 634 630 / +254 721 921 261

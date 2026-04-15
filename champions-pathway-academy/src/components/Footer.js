@@ -90,6 +90,15 @@ function Footer() {
 
           <li>
             <Link
+              to="/donate"
+              className={location.pathname === "/donate" ? "active" : ""}
+            >
+              Donate
+            </Link>
+          </li>
+
+          <li>
+            <Link
               to="/contact"
               className={location.pathname === "/contact" ? "active" : ""}
             >
