@@ -86,6 +86,25 @@ function Donate() {
         </div>
       </section>
 
+      <section className="donate-impact">
+        <div className="impact-card">
+          <h3>100+</h3>
+          <p>Young people engaged</p>
+        </div>
+        <div className="impact-card">
+          <h3>10+</h3>
+          <p>Talent pathways offered</p>
+        </div>
+        <div className="impact-card">
+          <h3>4</h3>
+          <p>Donation options available</p>
+        </div>
+        <div className="impact-card">
+          <h3>1</h3>
+          <p>Shared mission to uplift communities</p>
+        </div>
+      </section>
+
       <section className="donation-tiers-section">
         <div className="donation-tiers-header">
           <h2>Choose Where to Make Impact</h2>
@@ -151,6 +170,147 @@ function Donate() {
             className="donate-btn-link"
           >
             <button className="donate-btn">Donate Any Amount</button>
+          </a>
+        </div>
+      </section>
+
+      <section className="donation-impact-section">
+        <div className="donation-impact-header">
+          <h2>Your Donation Makes This Possible</h2>
+          <p>
+            Every contribution directly supports programmes that nurture talent,
+            build confidence, and create opportunity for children and young
+            people.
+          </p>
+        </div>
+
+        <div className="donation-impact-grid">
+          <div className="donation-impact-card">
+            <h3>Adopt a Child</h3>
+            <p>
+              Helps provide structured training, mentorship, and support for one
+              child’s development journey each term.
+            </p>
+          </div>
+
+          <div className="donation-impact-card">
+            <h3>Training Programmes</h3>
+            <p>
+              Sustains coaching sessions, training spaces, logistics, and
+              programme delivery for young athletes.
+            </p>
+          </div>
+
+          <div className="donation-impact-card">
+            <h3>Sporting Equipment</h3>
+            <p>
+              Supports the purchase of essential equipment so children can train
+              safely and competitively.
+            </p>
+          </div>
+
+          <div className="donation-impact-card">
+            <h3>Creative Arts Development</h3>
+            <p>
+              Opens pathways for expression, creativity, and confidence through
+              arts-based growth opportunities.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="donation-transparency-section">
+        <div className="donation-transparency-content">
+          <h2>Transparency Matters</h2>
+          <p>
+            We are committed to using donations responsibly and purposefully to
+            support youth development through sports, mentorship, equipment,
+            training, and creative arts.
+          </p>
+
+          <div className="transparency-points">
+            <div className="transparency-point">
+              <h3>Clear Purpose</h3>
+              <p>
+                Each donation tier is tied to a specific area of impact, making
+                it easier for supporters to give with confidence.
+              </p>
+            </div>
+
+            <div className="transparency-point">
+              <h3>Community Impact</h3>
+              <p>
+                Donations support programmes that benefit children, families,
+                schools, and the wider community.
+              </p>
+            </div>
+
+            <div className="transparency-point">
+              <h3>Long-Term Growth</h3>
+              <p>
+                Our focus is not only on short-term support, but on building
+                lasting pathways for talent, discipline, and opportunity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="donation-faq-section">
+        <div className="donation-faq-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Here are a few quick answers to help you give with confidence.</p>
+        </div>
+
+        <div className="donation-faq-list">
+          <div className="donation-faq-item">
+            <h3>Can I donate from outside Kenya?</h3>
+            <p>
+              Yes. Our payment options support secure online donations,
+              including international card payments.
+            </p>
+          </div>
+
+          <div className="donation-faq-item">
+            <h3>Can I donate more than one tier?</h3>
+            <p>
+              Yes. You may support more than one cause depending on the impact
+              you would like to make.
+            </p>
+          </div>
+
+          <div className="donation-faq-item">
+            <h3>Are payments secure?</h3>
+            <p>
+              Yes. Donations are processed through secure payment infrastructure
+              to protect your information and payment details.
+            </p>
+          </div>
+
+          <div className="donation-faq-item">
+            <h3>Can I donate any amount?</h3>
+            <p>
+              Yes. In addition to the listed tiers, you can choose the flexible
+              donation option and give any amount you wish.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="donation-final-cta">
+        <div className="donation-final-cta-box">
+          <h2>Every Gift Creates Opportunity</h2>
+          <p>
+            Your support helps us nurture talent, expand opportunity, and build
+            a stronger future for children and young people in our community.
+          </p>
+          <a
+            href={customDonation.donateLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="donate-btn-link"
+          >
+            <button className="donate-btn">Donate Today</button>
           </a>
         </div>
       </section>

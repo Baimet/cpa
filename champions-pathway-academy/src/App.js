@@ -15,6 +15,7 @@ import SocialSidebar from "./components/SocialSidebar";
 import { HelmetProvider } from "react-helmet-async";
 import BlogDetails from "./pages/BlogDetails";
 import Donate from "./pages/Donate";
+import DonateSuccess from "./pages/DonateSuccess";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/events/:id" element={<EventDetails />} />
           <Route path="/blog/:id" element={<BlogDetails />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/donate-success" element={<DonateSuccess />} />
         </Routes>
         <Footer />
       </Router>

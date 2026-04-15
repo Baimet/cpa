@@ -1,0 +1,98 @@
+.donate-success-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #f8f9fc 0%, #eef3ff 100%);
+  font-family: "Poppins", sans-serif;
+}
+
+.donate-success-box {
+  max-width: 760px;
+  width: 100%;
+  background: white;
+  border-radius: 24px;
+  padding: 40px 28px;
+  text-align: center;
+  box-shadow: 0 14px 30px rgba(0, 35, 102, 0.12);
+}
+
+.success-badge {
+  display: inline-block;
+  background-color: #002366;
+  color: #ffd700;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.donate-success-box h1 {
+  color: #002366;
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+}
+
+.donate-success-box p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  max-width: 620px;
+  margin: 0 auto 28px;
+}
+
+.success-note {
+  color: #002366;
+  font-weight: 500;
+  margin: 0 auto 24px;
+}
+
+.success-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.success-btn {
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.success-btn.primary {
+  background-color: #002366;
+  color: white;
+}
+
+.success-btn.primary:hover {
+  background-color: #ffd700;
+  color: #002366;
+}
+
+.success-btn.secondary {
+  background-color: #eef3ff;
+  color: #002366;
+}
+
+.success-btn.secondary:hover {
+  background-color: #dfe8ff;
+}
+
+@media (max-width: 768px) {
+  .donate-success-box {
+    padding: 32px 20px;
+  }
+
+  .donate-success-box h1 {
+    font-size: 1.8rem;
+  }
+
+  .donate-success-box p {
+    font-size: 1rem;
+  }
+}
