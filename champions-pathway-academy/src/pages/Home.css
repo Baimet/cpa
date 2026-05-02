@@ -1,5 +1,18 @@
-html {
-  scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.home-container {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -26,40 +39,63 @@ body {
   transform: scale(1.03);
 }
 
-.hero-wrapper {
+.home-hero {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 70px);
   width: 100%;
   overflow: hidden;
 }
 
-.hero-swiper {
-  height: 100%;
-}
-
-.hero-slide {
-  height: 100vh;
+.home-hero-bg {
+  position: absolute;
+  inset: 0;
   background-size: cover;
-  background-position: center;
-  filter: brightness(0.6);
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
-.hero-overlay {
+.home-hero-content {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 2;
   transform: translate(-50%, -50%);
+  width: 85%;
+  max-width: 1100px;
+  padding: 60px 40px;
   text-align: center;
   color: white;
-  z-index: 10;
-  width: 90%;
-  max-width: 800px;
 
-  /* 🚫 Remove the shifting animation */
-  animation: fadeOpacity 1.4s ease-in-out forwards;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
-/* New fade-only animation */
+@media (max-width: 768px) {
+  .home-hero-content {
+    width: 90%;
+    padding: 35px 20px;
+  }
+}
+
+.home-hero-content h1 {
+  max-width: 850px;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.home-hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.home-hero-bg {
+  transition: background-image 0.8s ease-in-out;
+}
+
 @keyframes fadeOpacity {
   from {
     opacity: 0;
@@ -67,20 +103,6 @@ body {
   to {
     opacity: 1;
   }
-}
-
-
-.hero-overlay h1 span {
-  font-size: 2.4rem;
-  margin-bottom: 20px;
-  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
-  color: #f4f4f4;
-}
-
-.hero-overlay p {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -310,4 +332,23 @@ body {
   .program-card p {
     font-size: 14px;
   }
+
+.home-hero {
+  height: calc(100vh - 65px);
+}
+
+.home-hero-content h1 {
+  font-size: 1.7rem;
+}
+
+.home-hero-content p {
+  font-size: 1.1rem;
+}
+
+.cta-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+}
+
+
 }

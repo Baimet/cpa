@@ -249,3 +249,14 @@
   background: radial-gradient(circle at top right, #00236615, transparent 70%);
   z-index: -1;
 }
+
+.no-events-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #002366;
+  font-weight: 600;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}

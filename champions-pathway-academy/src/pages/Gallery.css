@@ -213,3 +213,28 @@
     height: 240px;
   }
 }
+
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.gallery-filters button {
+  background: #ffffff;
+  color: #002366;
+  border: 1px solid #002366;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.gallery-filters button:hover,
+.gallery-filters button.active {
+  background: #002366;
+  color: #ffd700;
+}

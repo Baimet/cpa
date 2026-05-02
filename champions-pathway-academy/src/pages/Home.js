@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -10,7 +10,22 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Helmet } from "react-helmet-async";
 
+const heroImages = [
+  "/images/tenny.png",
+  "/images/footy.png",
+  "/images/rugi.png",
+];
+
 function Home() {
+  const [currentHero, setCurrentHero] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentHero((prev) => (prev + 1) % heroImages.length);
+    }, 4000);
+
+    return () => clearInterval(timer);
+  }, []);
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
@@ -62,39 +77,21 @@ function Home() {
         </script>
       </Helmet>
       <div className="home-container">
-        <section className="hero-wrapper">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={0}
-            slidesPerView={1}
-            autoplay={{ delay: 4000, disableOnInteraction: false }}
-            loop={true}
-            effect="fade"
-            className="hero-swiper"
-          >
-            {["/images/tenny.png", "/images/footy.png", "/images/rugi.png"].map(
-              (img, index) => (
-                <SwiperSlide key={index}>
-                  <div
-                    className="hero-slide"
-                    style={{
-                      backgroundImage: `url(${img})`,
-                    }}
-                  />
-                </SwiperSlide>
-              )
-            )}
-          </Swiper>
+        <section className="home-hero">
+          <div
+            className="home-hero-bg"
+            style={{
+              backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(${process.env.PUBLIC_URL}${heroImages[currentHero]})`,
+            }}
+          />
 
-          <div className="hero-overlay">
-            <h1>
-              <span>Welcome to Empower Champions Talent Academy</span>
-            </h1>
+          <div className="home-hero-content">
+            <h1>Welcome to Empower Champions Talent Academy</h1>
             <p>
               <i>"Where Excellence Thrives and Legends Rise"</i>
             </p>
             <Link to="/contact" className="cta-btn">
-              <span>Get Started</span>
+              Get Started
             </Link>
           </div>
         </section>

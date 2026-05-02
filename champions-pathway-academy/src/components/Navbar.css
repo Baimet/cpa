@@ -124,6 +124,7 @@
 /* Dropdown Styling */
 .dropdown {
   position: relative;
+  padding-bottom: 12px;
 }
 
 .dropdown-title {
@@ -141,15 +142,17 @@
   display: none;
   position: absolute;
   background-color: #001a4d;
-  top: 35px;
+  top: 100%;
   left: 0;
   list-style: none;
   padding: 10px 0;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
+  z-index: 2000;
   min-width: 180px;
 }
+
+
 
 .dropdown-menu li {
   text-align: left;
@@ -169,7 +172,7 @@
 }
 
 /* Show menu on hover */
-.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu, .dropdown-menu:hover {
   display: block;
 }
 

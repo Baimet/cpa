@@ -10,15 +10,24 @@ function UpcomingEvents() {
   const upcomingEvents = [
     {
       title: "Launch of Empower Champions Talent Academy",
-      date: "13th December 2025",
+      date: "2025-12-13",
+      displayDate: "13th December 2025",
       time: "8:00 AM",
       location: "Yikitise Primary School Grounds, Makueni",
       image: "/images/scout.jpeg",
-      description:
-        "Join us as we officially unveil Empower Champions Talent Academy — a center for nurturing talent and developing future champions. Expect games, mentorship sessions and community fun!",
+      description: "...",
       cta: "All are invited!",
     },
   ];
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const filteredUpcomingEvents = upcomingEvents.filter((event) => {
+    const eventDate = new Date(event.date);
+    eventDate.setHours(0, 0, 0, 0);
+    return eventDate >= today;
+  });
 
   return (
     <>
@@ -85,23 +94,29 @@ function UpcomingEvents() {
 
         {/* Event Cards */}
         <section className="events-list">
-          {upcomingEvents.map((event, index) => (
-            <div key={index} className="event-card fade-in">
-              <img src={event.image} alt={event.title} />
-              <div className="event-content">
-                <h2>{event.title}</h2>
-                <p className="event-meta">
-                  <strong>Date:</strong> <span>{event.date}</span> |{" "}
-                  <strong>Time:</strong> <span>{event.time}</span>
-                </p>
-                <p className="event-meta">
-                  <strong>Location:</strong> <span>{event.location}</span>
-                </p>
-                <p className="event-description">{event.description}</p>
-                <p className="event-cta">{event.cta}</p>
+          {filteredUpcomingEvents.length > 0 ? (
+            filteredUpcomingEvents.map((event, index) => (
+              <div key={index} className="event-card fade-in">
+                <img src={event.image} alt={event.title} />
+                <div className="event-content">
+                  <h2>{event.title}</h2>
+                  <p className="event-meta">
+                    <strong>Date:</strong> <span>{event.displayDate}</span> |{" "}
+                    <strong>Time:</strong> <span>{event.time}</span>
+                  </p>
+                  <p className="event-meta">
+                    <strong>Location:</strong> <span>{event.location}</span>
+                  </p>
+                  <p className="event-description">{event.description}</p>
+                  <p className="event-cta">{event.cta}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))
+          ) : (
+            <p className="no-events-message">
+              There are currently no upcoming events.
+            </p>
+          )}
         </section>
       </div>
     </>
